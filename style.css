@@ -1,0 +1,115 @@
+body {
+    background: linear-gradient(to bottom, #fde2ff, #e8e0fc);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#calc {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 12px 16px;
+    margin: 10px 0;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+input:focus {
+    border-color: #8e44ad;
+    box-shadow: 0 0 10px rgba(142, 68, 173, 0.4);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-group input {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.unit {
+    position: absolute;
+    right: 15px;
+    color: #888;
+    font-size: 0.95rem;
+    pointer-events: none;
+}
+
+
+button {
+    padding: 12px 24px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+#bmi {
+    font-size: 1.3rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+#verdict {
+    font-size: 1.1rem;
+    color: #6d6d6d;
+    margin-top: 0px;
+}
+
+#bmi-val.healthy {
+    color: #28a745;
+}
+
+#bmi-val.underweight {
+    color: #f39c12;
+}
+
+#bmi-val.overweight {
+    color: #d35400;
+}
+
+#bmi-val.obese {
+    color: #c0392b;
+}
